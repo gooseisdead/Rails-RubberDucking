@@ -1,7 +1,7 @@
 10.times do
-  Student.create(name: Faker::Name.name, mod: rand(1..5))
+  Student.create(name: Faker::DcComics.name, mod: rand(1..5))
 end
 
-5.times do
-  Duck.create(name: Faker::Creature::Dog.meme_phrase, description: Faker::Creature::Dog.breed)
+25.times do
+  Duck.create(name: Faker::Space.constellation, description: Faker::Science.element, student_id: Student.all.sample.id)
 end

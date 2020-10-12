@@ -1,0 +1,9 @@
+<h1>Student Profile</h1>
+
+<h2>Name: <%= @student.name %></h2>
+<h3>Mod: <%= @student.mod %>
+<p>Ducks:</p>
+<p><% @student.ducks.uniq.each do |duck| %></p>
+ <%= duck.name %> 
+<% end %>
+
